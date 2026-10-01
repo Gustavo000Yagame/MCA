@@ -5,21 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 
 @Entity
-@Table(name = "TBProduto")
-public class Produto {
+@Table(name = "TBDesafio")
+public class Desafio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Integer id;
-    private String nomeProduto;
-    private Double vlProduto;
-    private String flAtivo;
-
+    private String nomeCliente;
+    private Integer idade;
+    private String cpf;
+    private String flStatus;
 }

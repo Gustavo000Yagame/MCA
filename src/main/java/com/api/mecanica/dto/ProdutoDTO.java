@@ -9,6 +9,6 @@ public record ProdutoDTO(
          String nomeProduto,
          @DecimalMin(value = "0.01")
          Double vlProduto,
-        // @Pattern(regexp = "S|N", message = "Favor inserir S ou N")
-         Character flAtivo
+         @Pattern(regexp = "S|N", message = "Favor inserir S ou N")
+         String flAtivo
 ) {}
